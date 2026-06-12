@@ -1,0 +1,157 @@
+{
+  "settings": {
+    "name": "terra station",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#f7f7f7",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      },
+      "additionalSetColors": []
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.13",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/wallets-station.png",
+    "sitemapSwitcher": false,
+    "siteUrl": false,
+    "sitemapSwitcherAuto": "on",
+    "robotsSwitcher": false,
+    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
+    "mbrsiteDomain": "qxnsmccgd8",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.13",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Station Wallet | Terra Station | Official Site",
+        "meta_descr": "Station Wallet is a self-custodial crypto wallet for the Terra ecosystem. Secure your assets with MPC technology, manage crypto easily, and approve transactions using voice or text in a seamless Web3 experience.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <img src=\"@PROJECT_PATH@/assets/images/0-vqnfa1hwz7pxc7-o.png\" alt=\"Terra station\">\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_anchor": "image04-0",
+          "_isUserblock": true,
+          "_cid": "utO57HQbx9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#f7f7f7",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#f7f7f7"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#232323\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>Terra Station wallet: Navigating the Future of DeFi and Blockchain Ecosystems</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Introduction</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the ever-evolving landscape of decentralized finance (DeFi) and blockchain technology, few platforms have garnered as much attention as Terra Station. As the official wallet and interface for the Terra blockchain, <a href=\"https://station.terra.money/\" class=\"text-primary\">Terra Station</a> serves as a gateway for users to engage with a myriad of decentralized applications (dApps), manage their assets, and participate in the growing ecosystem of Terra. In this blog, we will explore the features, functionalities, and significance of Terra Station, as well as its impact on the broader DeFi landscape.<br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is Terra Station?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><a href=\"https://station.terra.money/\" class=\"text-primary\">Terra Station</a> is a multi-functional wallet designed specifically for the Terra blockchain. It allows users to store, send, and receive LUNA (the native token of Terra), as well as interact with various dApps built on the Terra network. Terra Station is available as both a web application and a mobile app, providing users with flexibility and convenience in managing their digital assets.<br><br><b>Key Features of Terra Station</b><br><b>User-Friendly Interface: </b><a href=\"https://station.terra.money/\" class=\"text-secondary\">Terra Station</a> is designed with usability in mind, offering an intuitive and straightforward interface that makes it easy for both beginners and experienced users to navigate the platform.<br><b>Asset Management:</b> Users can easily manage their LUNA and other Terra-based assets, including stablecoins like UST. The wallet provides detailed information about balances, transaction history, and staking rewards.<br><b>Staking and Governance: </b>Terra Station allows users to stake their LUNA tokens and participate in the governance of the Terra ecosystem. By staking their tokens, users can earn rewards while contributing to the network's security and decision-making processes.<br><b>Integration with dApps:</b> Terra Station serves as a bridge to various decentralized applications built on the Terra blockchain. Users can seamlessly interact with these dApps, ranging from lending platforms NFT marketplaces.<br><b>Cross-Chain Capabilities:</b> With the rise of interoperability in the blockchain space, <a href=\"https://station.terra.money/\" class=\"text-primary\">Terra Station</a> supports cross-chain interactions, allowing users to engage with assets and applications from other blockchain networks.</p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Evolution of Terra Station</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><br><b>1. The Birth of Terra</b><br>Terra was founded in 2018 by Daniel Shin and Do Kwon, with the goal of creating a stable and scalable cryptocurrency that could facilitate global commerce. The platform gained traction by introducing algorithmic stablecoins, with UST (TerraUSD) being its flagship offering. The need for a user-friendly interface to interact with this ecosystem led to the development of Terra Station.<br><br><b>2. Rapid Growth and Adoption</b><br>Since its launch, Terra has experienced rapid growth, attracting a vibrant community of developers and users. Terra Station has played a crucial role in this growth, providing a seamless experience for users to access the platform’s features and services. The wallet has continually evolved, adding new functionalities and enhancing user experience based on community feedback.<br><br><b>3. The Terra Ecosystem</b><br>Terra Station is an integral part of the broader Terra ecosystem, which includes a diverse range of dApps and services. From decentralized exchanges (DEXs) to lending protocols, the Terra ecosystem offers users numerous opportunities to engage with DeFi. Terra Station acts as the entry point for users to explore these offerings.<br><br></p>\n              </div>\n            </div>\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Navigating Terra Station: A Comprehensive Guide</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Getting Started</b><br>To get started with Terra Station, users need to create a wallet. This process is straightforward and involves generating a new wallet or importing an existing one. Users must securely store their recovery phrase, as it is crucial for accessing their wallet in case of device loss.<br><br><b>2. Wallet Interface</b><br>Upon logging into Terra Station, users are greeted with a clean and organized dashboard. The main interface displays the user's balance, recent transactions, and available actions such as sending or receiving tokens.<br><br><b>3. Managing Assets</b><br>Users can easily manage their LUNA and other Terra-based assets within the wallet. Terra Station provides real-time updates on asset prices, transaction history, and staking rewards, allowing users to stay informed about their investments.<br><br><b>4. Staking LUNA</b><br>Staking is a key feature of Terra Station. Users can delegate their LUNA tokens to validators, earning rewards while contributing to the security of the network. The staking process is user-friendly, with clear instructions and options for selecting validators based on performance and commission rates.<br><br><b>5. Participating in Governance</b><br><a href=\"https://station.terra.money/\" class=\"text-primary\">Terra Station</a> empowers users to participate in governance decisions. Users can vote on proposals that affect the Terra ecosystem, such as protocol upgrades and parameter changes. This democratic approach ensures that the community has a voice in shaping the future of the platform.<br><br><b>6. Interacting with dApps</b><br>One of the standout features of Terra Station is its integration with various dApps. Users can access lending platforms, DEXs, and NFT marketplaces directly from the wallet. This seamless interaction enhances the overall user experience and encourages engagement with the Terra ecosystem.<br><br><b>7. Cross-Chain Functionality</b><br>As blockchain interoperability becomes increasingly important, Terra Station is positioned to facilitate cross-chain interactions. Users can manage assets across different networks, making it easier to engage with a broader range of dApps and services.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Importance of Terra Station in the DeFi Landscape</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Accessibility</b><br>Terra Station lowers the barrier to entry for users looking to engage with DeFi. Its user-friendly interface and comprehensive features make it accessible to individuals who may be new to cryptocurrency and blockchain technology. This accessibility is crucial for expanding the DeFi user base.<br><br><b>2. Empowering Users</b><br>By enabling users to stake their tokens and participate in governance, Terra Station empowers its community. Users can directly influence the direction of the Terra ecosystem, fostering a sense of ownership and responsibility.<br><br><b>3. Supporting Innovation</b><br>Terra Station serves as a launchpad for innovation within the Terra ecosystem. By providing developers with the tools and infrastructure to build dApps, it encourages creativity and experimentation, leading to the development of unique financial products and services.<br><br><b>4. Contributing to Economic Growth</b><br>The growth of Terra Station and the broader Terra ecosystem has the potential to drive economic growth. By facilitating transactions, lending, and investment opportunities, Terra Station contributes to the development of a vibrant digital economy.<br><br></p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>Challenges and Considerations</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Competition in the DeFi Space</b><br>As the DeFi landscape becomes increasingly crowded, Terra Station faces competition from other wallet providers and platforms. To maintain its position, Terra Station must continually innovate and enhance its features to attract and retain users.<br><br><b>2. Regulatory Scrutiny</b><br>The rise of DeFi has not gone unnoticed by regulators. Terra Station and the Terra ecosystem must navigate the evolving regulatory landscape to ensure compliance while fostering growth and innovation.<br><br><b>3. Security Risks</b><br>As with any cryptocurrency wallet, security is a paramount concern. Users must take precautions to protect their wallets and private keys. Terra Station has implemented security measures, but users must remain vigilant against potential threats.<br><br><b>4. Market Volatility</b><br>The cryptocurrency market is known for its volatility. Users engaging with Terra Station should be prepared for price fluctuations and understand the risks associated with investing in digital assets.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>The Future of Terra Station</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>1. Expanding Ecosystem</b><br>As the Terra ecosystem continues to grow, Terra Station will likely expand its offerings and features. This could include new dApps, enhanced user interfaces, and additional cross-chain capabilities.<br><br><b>2. Integration with Traditional Finance</b><br>The integration of DeFi with traditional finance presents significant opportunities for growth. Terra Station may explore partnerships with financial institutions to create hybrid solutions that bridge the gap between the two sectors.<br><br><b>3. Enhanced User Experience</b><br>User experience is paramount for the success of any platform. Terra Station will continue to focus on improving its interface, adding features based on user feedback, and providing educational resources to help users navigate the DeFi landscape.<br><br><b>4. Community Engagement</b><br>Terra Station's success hinges on its community. Ongoing engagement initiatives, such as forums, educational content, and community events, will be essential for fostering a vibrant user base and encouraging participation.<br><br><b>5. Emphasis on Security</b><br>As security remains a top priority, Terra Station will likely invest in further enhancing its security measures. This could include advanced encryption, multi-signature transactions, and user education on best practices for securing digital assets.</p>\n              </div>\n            </div><div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Conclusion</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">Terra Station stands as a testament to the potential of decentralized finance and blockchain technology. By providing users with a user-friendly interface and comprehensive tools, Terra Station has become a vital component of the Terra ecosystem. Its emphasis on accessibility, empowerment, and community engagement positions it as a leader in the evolving DeFi landscape.<br><br>As the cryptocurrency space continues to grow and evolve, Terra Station will play a crucial role in shaping the future of finance. With its innovative features, commitment to user experience, and focus on community engagement, Terra Station is set to navigate the challenges and opportunities that lie ahead.<br><br>In a world where digital assets are becoming increasingly important, platforms like Terra Station will be at the forefront of the financial revolution, empowering users to take control of their financial futures and participate in the burgeoning world of decentralized finance. Whether you are a seasoned crypto enthusiast or a newcomer to the space, Terra Station offers a compelling gateway to the exciting possibilities of the Terra ecosystem.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_anchor": "article07-1",
+          "_isUserblock": true,
+          "_cid": "utO57ZsYIw",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
